@@ -151,7 +151,7 @@ public struct CodeCard: View {
     }
     
     func languageName(_ result: HighlightResult) -> some View {
-        Text(result.languageName)
+        Text("Python)
             .font(.caption2)
             .fontWeight(.semibold)
             .foregroundColor(.secondary)
