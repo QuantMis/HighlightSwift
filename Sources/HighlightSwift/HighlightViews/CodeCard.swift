@@ -19,6 +19,7 @@ public struct CodeCard: View {
     var highlightResult: HighlightResult?
     
     let text: String
+    let member: Bool
     let initialTextStyle: Font.TextStyle
     let initialStyleName: HighlightStyle.Name
     
