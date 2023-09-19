@@ -29,7 +29,8 @@ public struct CodeCard: View {
     ///   - textStyle: The initial font text style (default: .caption2).
     public init(_ text: String,
                 style: HighlightStyle.Name = .xcode,
-                textStyle: Font.TextStyle = .caption2) {
+                textStyle: Font.TextStyle = .caption2, member:Bool) {
+        self.member = member
         self.text = text
         self.initialStyleName = style
         self.initialTextStyle = textStyle
@@ -58,7 +59,7 @@ public struct CodeCard: View {
             .onTapGesture(count: 2, perform: resetStyle)
             .onTapGesture(perform: toggleShowButtons)
             VStack(alignment: .trailing) {
-                if showStyleControls {
+                if member {
                     styleControls
                 }
                 Spacer(minLength: 12)
