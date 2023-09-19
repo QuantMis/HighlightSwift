@@ -187,7 +187,7 @@ struct CodeCard_Previews: PreviewProvider {
     
     static var previews: some View {
         ScrollView {
-            CodeCard(code)
+            CodeCard(code, member: false)
                 .padding()
         }
     }
