@@ -115,7 +115,7 @@ public struct CodeCard: View {
             case .caption2:
                 textStyle = .caption
             default:
-                textStyle = .caption2
+                textStyle = .footnote
             }
         }
     }
