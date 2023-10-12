@@ -30,7 +30,7 @@ public struct CodeCard: View {
     ///   - textStyle: The initial font text style (default: .caption2).
     public init(_ text: String,
                 style: HighlightStyle.Name = .xcode,
-                textStyle: Font.TextStyle = .footnote, member:Bool) {
+                textStyle: Font.TextStyle = .callout, member:Bool) {
         self.member = member
         self.text = text
         self.initialStyleName = style
