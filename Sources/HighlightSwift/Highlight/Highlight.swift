@@ -13,7 +13,7 @@ public actor Highlight {
     /// - Throws: Either a HighlightError or an Error.
     /// - Returns: The result of the syntax highlight.
     public static func text(_ text: String,
-                            language: String? = python,
+                            language: String? = "python",
                             ignoreIllegals: Bool? = nil,
                             style: HighlightStyle = .dark(.xcode)) async throws -> HighlightResult {
         try await shared.highlight(
